@@ -1,10 +1,5 @@
 # Library Management System 📚
 
-![Test Status](https://github.com/NRamudu/librarymgmtsystem/actions/workflows/test.yml/badge.svg)
-![Build Status](https://github.com/NRamudu/librarymgmtsystem/actions/workflows/docker-build-push.yml/badge.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/NRamudu/librarymgmtsystem)
-![Docker Image Size](https://img.shields.io/docker/image-size/NRamudu/librarymgmtsystem)
-
 ## 📖 Overview
 
 The **Library Management System** is a comprehensive RESTful API for managing books and borrowers in a library. Key features include:
