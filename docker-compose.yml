@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: library_dev
+    ports:
+      - "3366:3306"
+
+  app:
+    image: librarymgmtsystem
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/library_dev?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    volumes:
+      - app-logs:/app/logs
+    depends_on:
+      - db
+
+volumes:
+  app-logs:
+
+# docker stack deploy -c docker-compose.yml library-management-system
+# docker stack rm library-management-system
