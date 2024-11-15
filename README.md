@@ -216,7 +216,7 @@ A Postman collection is available to facilitate testing and exploring the Librar
 **Postman Collection Information:**
 - **Name**: Library Management System
 - **Description**: Postman collection for the Library Management System API
-- **Schema**: [Postman Collection Schema](https://raw.githubusercontent.com/NRamudu/librarymgmtsystem/main/Library_Management_System_postman_collection.json)
+- **Schema**: [Postman Collection Schema](https://github.com/NRamudu/librarymgmtsystem/blob/main/Library_Management_System_postman_collection.json)
 
 **Endpoints Included:**
 1. **Register a New Borrower**
